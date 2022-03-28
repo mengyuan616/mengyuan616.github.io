@@ -1,84 +1,201 @@
 <!DOCTYPE html>
 <html class="html" lang="en">
-    <!-- READ BY THE BROWSER -->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale-1">
-        <title>Mengyuan Dong</title>
-        <meta name="description" content="Multimedia journalist currently studying at UC Berkeley J-School.">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/simple-grid.css"> 
-    
-        <style>
+  <!-- READ BY THE BROWSER -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <title>Berkeley Times</title>
+    <meta name="description" content="The local news page of Berkeley Times" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/simple-grid.css" />
+  </head>
 
-            h2 {
-                color: #B54434;
-                margin: 0px;
-            }
-            
-            a {
-                color: darkblue;
-            }
+  <body>
+    <header>
+      <img
+        id="imgLogo"
+        src="./assets/logo.png"
+        alt="The big logo of Berkeley Times"
+      />
 
-            #headshot {
-                width: 100%;
-            }
-        </style>
-    </head>
+      <nav>
+        <ul id="ulNav">
+          <li class="liNav">
+            <a class="navText" href="https://journ220.github.io/">LOCAL</a>
+          </li>
+          <li class="liNav">
+            <a class="navText" href="https://journ220.github.io/">BUSINESS</a>
+          </li>
+          <li class="liNav">
+            <a class="navText" href="https://journ220.github.io/"
+              >ENTERTAINMENT</a
+            >
+          </li>
+          <li class="liNav">
+            <a class="navText" href="https://journ220.github.io/">SPORTS</a>
+          </li>
+          <li class="liNav">
+            <a class="navText" href="https://journ220.github.io/">FOOD</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <p id="breadcrumb">LOCAL</p>
 
+            <h1>Coding class pace too fast, students say</h1>
+            <p id="pSubtitle">
+              Last week's mid-semester survey of Journalism 220 also revealed
+              most students enjoy the hand-coding assignments and want more
+              in-class practice.
+            </p>
+            <figure>
+              <img
+                src="./assets/pexels-alex-green-5699432.jpg"
+                alt="A person taking a hand-written survey"
+              />
 
-    <!-- SEEN BY THE READER-->
-    <body>
-        <main>
-            <div class="container">
-                <div class="row"> 
-                    <div class="col-12"> 
-                        <header>
-                            <h1>Mengyuan Dong</h1>
-                        </header>
-                </div>
+              <figcaption id="surveyCap">
+                Students took the survey online through Canvas, so it's
+                definitely weird that we're showing an image of a hand-written
+                survey. (<a href="https://journ220.github.io/">Pexels</a>)
+              </figcaption>
+            </figure>
 
-                <div class="row">               
-                    <div class="col-5">
-                        <img id="headshot" src="assets/mengyuan_dong.jpg" alt="Headshot of Mengyuan"/>
-                    </div>
+            <p id="byline">
+              BY <a href="https://journ220.github.io/">SOO OH</a> ON MARCH 14,
+              2022
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa.
+            </p>
+            <p>
+              Sociis natoque penatibus et
+              <a href="https://journ220.github.io/"
+                >magnis dis parturient montes</a
+              >, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem.
+            </p>
+            <p>
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+              aliquet nec, vulputate eget, arcu.
+            </p>
+            <p>
+              In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              Cras dapibus.
+            </p>
+            <p>
+              Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+              Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+              enim.
+            </p>
 
-                    <div class="col-7">
-                        <h2>About me</h2>
-                        <p>I am a multimedia journalist currently based in the Bay Area. I am also pursuing my master’s degree in journalism at the University of California, Berkeley.</p>
-                        <p>I love to write, code and film.</p>
-                        <p>I’ve been writing-focused my whole college life, but I’m also equipped with basic coding and data analysis skills that support my passion for reporting data-driven stories.</p>
-                        <p>I’ve had media experience in both China and the U.S., including interning at Caixin Media and being a student reporter at <a href="https://thedailytexan.com/staff_name/mengyuan-dong/">The Daily Texan</a>.</p>
-                        <p>My reporting interests include climate, recycling policies, public health and social justice.</p>
+            <h2>Sed fringilla mauris sit amet nibh</h2>
+            <p>
+              Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+              Aenean imperdiet.
+            </p>
+            <p>
+              Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+              nisi. Nam eget dui. Etiam rhoncus.
+            </p>
+            <p>
+              Maecenas tempus,
+              <a href="https://journ220.github.io/"
+                >tellus eget condimentum rhoncus</a
+              >, sem quam semper libero, sit amet adipiscing sem neque sed
+              ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+              lorem.
+            </p>
+            <p>
+              Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+              libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
+              eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit
+              amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+              bibendum sodales, augue velit cursus nunc.
+            </p>
 
-                        <!-- <footer>
-                            Copyright @ Mengyuan Dong 2022
-                         </footer> -->
-                    </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h2 id=myWork>My work</h2>
-                        <article>
-                            <h3><a href="https://thedailytexan.com/2018/10/12/single-parents-struggle-in-college/">Single mothers struggle in college</a></h3>
+            <h2>Nullam dictum felis eu pede mollis pretium</h2>
+            <p>
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+              aliquet nec, vulputate eget, arcu.
+            </p>
+            <p>
+              In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              Cras dapibus.
+            </p>
+            <p>
+              Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+              Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+              enim.
+            </p>
+          </div>
 
-                            <p>A story I wrote for The Daily Texan about how single mothers were struggling with balancing child care and schoolwork in college.</p>
-                        </article>
-                        <article>
-                            <h3><a href="https://thedailytexan.com/2018/10/08/ut-seniors-launching-new-organization-fighting-against-plastic-pollution/">UT Seniors launching new organization fighting against plastic pollution</a></h3>
-                            <p>This is a story about an environmental organization launched by three UT seniors tackling plastic pollution and advocating for resource recovery.</p>
-                        </article>
-                        <article>
-                            <h3><a href="https://richmondconfidential.org/2021/09/07/richmond-slow-burn-glass/">At Richmond glassblowing studio, art is a Slow Burn</a></h3>
-                            <p>A group video project featuring a glass blowing studio in Richmond. Our team interviewed the owner and his students about their experiences and how they were rebuilding the glass blowing community after the pandemic lockdown.</p>
-                        </article>
-                    </div>
-                </div>
-            </div> 
-        </main>
+          <div id="otherStories" class="col-3">
+            <h3>Other Stories</h3>
 
-        
-    </body>
+            <article>
+              <img
+                src="./assets/pexels-nimit-kansagra-4509131.jpg"
+                alt="random html code on a computer screen"
+              />
+              <h4>Opinion: The class is going at a nice pace, actually</h4>
+            </article>
+
+            <article>
+              <img
+                src="./assets/pexels-chevanon-photography-302899.jpg"
+                alt="A barista making coffee"
+              />
+              <h4>New coffee shop opens by campus</h4>
+            </article>
+
+            <article>
+              <img
+                src="./assets/pexels-vitaly-vlasov-1546003.jpg"
+                alt="A backpack on the bench"
+              />
+              <h4>Found: Is this your backpack?</h4>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p>
+              © 2022 Berkeley Times. Berkeley Times is located in Lower News in
+              North Gate Hall at the University of California, Berkeley.
+              <a href="https://journ220.github.io/">Contact us by email.</a>
+            </p>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <li>
+                <a href="https://journ220.github.io/">About</a>
+              </li>
+              <li>
+                <a href="https://journ220.github.io/">Publisher</a>
+              </li>
+              <li>
+                <a href="https://journ220.github.io/">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

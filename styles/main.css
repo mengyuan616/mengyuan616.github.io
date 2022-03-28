@@ -1,0 +1,113 @@
+#imgLogo {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+nav {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 30px;
+}
+
+#ulNav {
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.liNav {
+  display: inline-block;
+}
+
+a {
+  color: orangered;
+}
+
+.navText {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+#breadcrumb {
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+#pSubtitle {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+figure {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+#surveyCap {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#byline {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+article {
+  margin-top: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: white;
+  background-color: #222222;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 33.75em) {
+  #otherStories {
+    border-top: 2px solid #cccccc;
+    margin-top: 25px;
+    padding-top: 10px;
+  }
+}
