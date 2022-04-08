@@ -1,0 +1,17 @@
+h2 {
+  color: #B54434;
+  margin: 0px;
+  }
+  
+a {
+    color: darkblue;
+  }
+
+img {
+  width: 100%;
+}
+
+.box {
+  border: 1.5px solid #cccccc;
+  padding: 10px;
+}
