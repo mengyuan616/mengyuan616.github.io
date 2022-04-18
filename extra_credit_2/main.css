@@ -1,0 +1,42 @@
+
+h1 {
+	color: darkgreen;
+}
+
+h1:hover {
+	font-size: 50px;
+	transition: font-size 5s;
+}
+
+#dropcap::first-letter {
+	color: darkgreen;
+	font-size: 40px;
+	float: left;
+	margin-right: 5px;
+}
+
+#button1 {
+	width: 100px;
+	height: 30px;
+	background-color: lightgrey;
+	color: darkgreen;
+	font-weight: bold;
+}
+
+#button1:active {
+	width: 200px;
+	transition: width 2s;
+}
+
+#button2 {
+	width: 100px;
+	height: 30px;
+	background-color: lightgrey;
+	color: darkblue;
+	font-weight: bold;
+}
+
+#button2:focus {
+	background-color: seagreen;
+	color: white;
+}
