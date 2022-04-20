@@ -114,10 +114,18 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .topNav {
     text-align: left;
   }
-  .topNav a:first-child {display: none;}
+  .topNav a:nth-child(2) {display: none;}
+  .topNav a:nth-child(3) {display: none;}
+  .topNav a:nth-child(4) {display: none;}
   .topNav a.icon {
     float: right;
     display: block;
@@ -137,7 +145,7 @@ footer {
     margin-bottom: 5px;
   }
   .topNav a {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 13px;
+    margin-right: 13px;
   }
 }
