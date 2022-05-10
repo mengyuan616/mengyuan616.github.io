@@ -1,0 +1,11 @@
+
+1. put everything in a div
+<div>
+</div>
+
+2. look into css background-size cover
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+3. position: sticky
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
