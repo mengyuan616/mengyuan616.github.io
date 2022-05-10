@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	left: 0;
 	top: 0;
-	font-family: "Crimson Text", serif;
+	font-family: 'Crimson Text', sans-serif;
 	font-size: 1.2rem;
 	font-weight: normal;
 }
@@ -53,7 +53,7 @@ figure {
 	position: absolute;
 	z-index: 2;
 	max-width: 750px;
-	margin: 8rem 60px 10rem 60px;
+	margin: 8rem 30px 10rem 30px;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ figure {
 
 h1 {
 	display: block;
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-align: left;
@@ -80,9 +80,10 @@ h1 {
 	background-color: rgba(255, 255, 255, 0.85);
 	position: relative;
 	z-index: 2;
-	max-width: 600px;
-	margin: 1rem auto 15rem ;
+	max-width: 400px;
+	margin: 1rem auto 15rem;
 	padding: 30px;
+	font-size: 1rem;
 }
 
 #scrollyLast {
@@ -161,6 +162,19 @@ footer {
 
 @media only screen and (min-width: 45em) {
 	/* 720px */
+
+	h1 {
+		font-size: 48px;
+	}
+
+	#scrollyHeader {
+		margin: 8rem 60px 10rem 60px;
+	}
+
+	.scrollyText {
+		max-width: 600px;
+		font-size: 1.2rem;
+	}
 
 	.leftPic {
 		float: left;
