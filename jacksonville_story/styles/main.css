@@ -95,8 +95,8 @@ h1 {
 }
 
 p {
-	font-size: 1.125rem;
-	line-height: 1.875rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 h2 {
@@ -122,10 +122,14 @@ a:hover {
 	margin-left: 5px;
 }
 
-
-footer {
-	margin-top: 40px;
+#videoCap {
+	margin: 0px;
 	font-size: 15px;
+	color: #404040;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	line-height: normal;
+
 }
 
 .video-container {
@@ -149,6 +153,8 @@ footer {
 }
 
 footer {
+	margin-top: 40px;
+	font-size: 15px;
 	color: whitesmoke;
 	background-color:rgba(0,0,0,0.5);
 	padding: 6px;
@@ -171,6 +177,11 @@ footer {
 
 	h1 {
 		font-size: 48px;
+	}
+
+	p {
+		font-size: 1.125rem;
+		line-height: 1.875rem;
 	}
 
 	#scrollyHeader {
