@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Template</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+  <style>
+    body { 
+      margin:0; 
+      padding:0; 
+    }
+
+    #map { 
+      position:absolute; 
+      top:0; 
+      bottom:0; 
+      width:100%; 
+    }
+
+    .map-overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      margin-right: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      overflow: auto;
+      border-radius: 3px;
+    }
+
+    #legend {
+      padding: 10px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      line-height: 12px;
+      margin-bottom: 40px;
+    }
+
+    .legend-key {
+      display: inline-block;
+      border-radius: 20%;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <div class='map-overlay' id='legend'></div>
+
+  <div id="geocoder" class="geocoder"></div>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWVuZ3l1YW5kb25nIiwiYSI6ImNsMGJ6ZWw2MjBqejIzY3IxOWFpbW9xbmcifQ.dv4uxz5EzPgnxf08VON14w';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mengyuandong/clax68p7f000a15qraauqxd94',
+      center: [-122.073881, 37.875421],
+      zoom: 7.65
+    });
+
+  // Add zoom and rotation controls to the map. 
+    map.addControl(new mapboxgl.NavigationControl()); 
+
+// Disable scroll zooming 
+    map.scrollZoom.disable();
+
+// Create legend
+    map.on('load', function() {
+
+      map
+      var layers = ['% White', '100', '90', '80', '70', '60', '50', ''];
+      var colors = ['','#54278f','#756bb1','#9d99c7','#bcbddc','#dadaeb','#f2f0f7'];
+
+      for (i = 0; i < layers.length; i++) {
+        var layer = layers[i];
+        var color = colors[i];
+        var item = document.createElement('div');
+        var key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        var value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      }
+    });
+
+    map.on('load', function() {
+
+      var layers = ['% Latino', '100', '90', '80', '70', '60', '50', ''];
+      var colors = ['','#006d2c','#31a354','#74c476','#a1d99b','#c7e9c0','#edf8e9'];
+
+      for (i = 0; i < layers.length; i++) {
+        var layer = layers[i];
+        var color = colors[i];
+        var item = document.createElement('div');
+        var key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        var value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      }
+    });
+
+    map.on('load', function() {
+
+      var layers = ['% Asian', '100', '90', '80', '70', '60', '50', ''];
+      var colors = ['','#b30000','#e34a33','#fc8d59','#fdbb84','#fdd49e','#fef0d9'];
+
+      for (i = 0; i < layers.length; i++) {
+        var layer = layers[i];
+        var color = colors[i];
+        var item = document.createElement('div');
+        var key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        var value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      }
+    });
+
+    map.on('load', function() {
+
+      var layers = ['% Black', '100', '90', '80', '70', '60', '50'];
+      var colors = ['','#08519c','#3182bd','#6baed6','#9ecae1','#c6dbef','#eff3ff'];
+
+      for (i = 0; i < layers.length; i++) {
+        var layer = layers[i];
+        var color = colors[i];
+        var item = document.createElement('div');
+        var key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        var value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      }
+    });
+
+// Add geocoder
+    const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      placeholder: 'Search for places in the Bay Area',
+
+        // Limit seach results to US.
+      countries: 'us',
+
+        // Use a bounding box to further limit results
+        // to bay area region
+      bbox: [-123.53354, 36.89303, -121.20820, 38.86424]
+
+    });
+
+// Add the geocoder to the map
+    map.addControl(geocoder);
+
+// Add popup for chargers
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['bay-ev-chargers-racial-majori-69bwd9']
+      });
+
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+
+      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+      .setLngLat(feature.geometry.coordinates)
+      .setHTML('<b>Address: </b>' + feature.properties.street_address + '<br><b>Access time: </b>' + feature.properties.access_days_time + '<br><b>Opened in: </b>' + feature.properties.open_date)
+      .setLngLat(feature.geometry.coordinates)
+      .addTo(map);
+    });
+
+  </script>
+  
+</body>
+</html>
+
