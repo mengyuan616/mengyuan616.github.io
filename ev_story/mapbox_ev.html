@@ -190,7 +190,7 @@
 
       var popup = new mapboxgl.Popup({ offset: [0, -15] })
       .setLngLat(feature.geometry.coordinates)
-      .setHTML('<b>Address: </b>' + feature.properties.street_address + '<br><b>Access time: </b>' + feature.properties.access_days_time + '<br><b>Opened in: </b>' + feature.properties.open_date)
+      .setHTML('<b>Address: </b>' + feature.properties.street_address + '<br><b>Access time: </b>' + feature.properties.access_days_time + '<br><b>Opened: </b>' + feature.properties.open_date)
       .setLngLat(feature.geometry.coordinates)
       .addTo(map);
     });
