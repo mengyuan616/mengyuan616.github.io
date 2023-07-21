@@ -116,6 +116,12 @@ img {
   margin: 0px 2px;
 }
 
+.tech {
+  color: darkgrey;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
 .publish {
   font-style: italic;
 }
