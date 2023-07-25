@@ -14,7 +14,7 @@ body {
   left: 0;
   top: 0;
   font-family: Lato, sans-serif;
-  font-weight: 100%;
+  font-weight: 400;
 }
 
 .container {
@@ -144,7 +144,7 @@ body {
   }
 
   .col-4 {
-    width: 29.33%;
+    width: 46%;
   }
 
   .col-5 {
@@ -187,7 +187,29 @@ body {
 @media only screen and (min-width: 60em) {
   /* 960px */
   .container {
-    width: 75%;
-    max-width: 60rem;
+    width: 90%;
+    max-width: 90rem;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  #aboutSec {
+/*  margin-top: 30px;*/
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  .boxData {
+    height: 430px;
+  }
+
+  .boxWriting {
+    height: 380px;
+  }
+
+  .boxVideo {
+    height: 450px;
   }
 }
