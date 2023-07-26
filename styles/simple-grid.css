@@ -108,8 +108,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {
-  /* 540px */
+@media only screen and (min-width: 480px) {
   .container {
     width: 80%;
   }
@@ -129,8 +128,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 45em) {
-  /* 720px */
+@media only screen and (min-width: 768px) {
   .col-1 {
     width: 4.33%;
   }
@@ -182,10 +180,21 @@ body {
   .hidden-sm {
     display: block;
   }
+
+  .boxData {
+    height: 430px;
+  }
+
+  .boxWriting {
+    height: 380px;
+  }
+
+  .boxVideo {
+    height: 450px;
+  }
 }
 
-@media only screen and (min-width: 60em) {
-  /* 960px */
+@media only screen and (min-width: 1280px) {
   .container {
     width: 90%;
     max-width: 90rem;
