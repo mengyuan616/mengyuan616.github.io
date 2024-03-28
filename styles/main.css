@@ -74,7 +74,7 @@ a {
   text-decoration: none;
   }
 
-.code {
+.highlight {
   color: #828282;
   text-decoration: underline;
   transition: transform 0.1s ease; 
